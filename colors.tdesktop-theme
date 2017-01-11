@@ -13,22 +13,22 @@
 
 // Color presets //
 
-COLOR_GRAY: #999999;                            // Основной цвет
-COLOR_DARK: #2f2f2f;
-COLOR_GREEN_DARK: #008c00;
-COLOR_GREEN_LIGHT: #15cd7d;
+COLOR_GRAY: #999999;                            
+COLOR_DARK: #2f2f2f;                            // Main color (dark one)
+COLOR_GREEN_DARK: #008c00;                      // Accent color
+COLOR_GREEN_LIGHT: #15cd7d;                     // Accent color #2 (just like first one with slight changes)
 COLOR_GREEN_RIPPLE_ACTIVE: #025618;
 
 COLOR_WHITE: #ffffff;
 COLOR_BLACK: #000000;
-COLOR_PINK: #e016a0;                            // Просто для тестирования :)
+COLOR_PINK: #e016a0;                            // Just for testing purposes :)
 
 
 // basic
 windowBg: COLOR_DARK;                           // Window backgrounds
 windowFg: COLOR_WHITE;                          // Main text / chat text
-windowBgOver: #363838;                          // Фон окна поиска + цвет кнопок в контекстном меню
-windowBgRipple: #272828;                        // Неактивный чат в списке чатов (нажатие и удерживание)
+windowBgOver: #363838;                          // Search field backgroud + buttons color in context menu
+windowBgRipple: #272828;                        // Inactive chat in chats list (press & hold)
 windowFgOver: windowFg;                         // black: fallback for over text color
 windowSubTextFg: COLOR_GRAY;                    // Chats list message preview text
 windowSubTextFgOver: #919191;                   // Mouse over chats list message preview text
@@ -50,18 +50,18 @@ imageBgTransparent: COLOR_WHITE;
 //widgets
 activeButtonBg: COLOR_GREEN_DARK;               // Currently selected button background
 activeButtonBgOver: #00a32b;                    // Mouse over currently selected button background
-activeButtonBgRipple: COLOR_GREEN_RIPPLE_ACTIVE;// Фон первичной кнопки и активного чата (нажать и удерживать) 
+activeButtonBgRipple: COLOR_GREEN_RIPPLE_ACTIVE;// Primary button background color (and active chat) - Press & hold 
 activeButtonFg: COLOR_WHITE;                    // Currently selected button text
 activeButtonFgOver: activeButtonFg;             // Mouse over currently selected button text
-activeButtonSecondaryFg: COLOR_WHITE;           // Цвет счётчика на активной кнопке
-activeButtonSecondaryFgOver: COLOR_WHITE;       // Цвет счётчика на активной кнопке (при наведении курсора)
-activeLineFg: COLOR_GREEN_DARK;                 // Полоска активной строки ввода (обычное состояние)
-activeLineFgError: #e48383;                     // Полоска активной строки ввода (при ошибке) - красное
+activeButtonSecondaryFg: COLOR_WHITE;           // Counter color on primary button
+activeButtonSecondaryFgOver: COLOR_WHITE;       // Counter color on primary button (hover)
+activeLineFg: COLOR_GREEN_DARK;                 // Active input field line color (normal)
+activeLineFgError: #e48383;                     // Active input field line color (error)
 
-lightButtonBg: COLOR_DARK;                      // Фон вторичной кнопки
-lightButtonBgOver: #424444;                     // Фон вторичной кнопки при наведении курсора
-lightButtonBgRipple: #363838;                   // Фон вторичной кнопки (нажать и удерживать)
-lightButtonFg: COLOR_WHITE;                     // Цвет текста на вторичных кнопках
+lightButtonBg: COLOR_DARK;                      // Secondary button background color (default)
+lightButtonBgOver: #424444;                     // Secondary button background color (hover)
+lightButtonBgRipple: #363838;                   // Secondary button background color (press & hold)
+lightButtonFg: COLOR_WHITE;                     // Secondary button text color
 lightButtonFgOver: lightButtonFg;
 
 attentionButtonFg: #d14e4e;
@@ -69,7 +69,7 @@ attentionButtonFgOver: #d14e4e;
 attentionButtonBgOver: #fcdfde;
 attentionButtonBgRipple: #f4c3c2;
 
-outlineButtonBg: COLOR_DARK;                    // Например, фон кнопок (фотографии, ссылки...) в профилях
+outlineButtonBg: COLOR_DARK;                    // Buttons background in profiles (shared media)
 outlineButtonBgOver: lightButtonBgOver;
 outlineButtonOutlineFg: windowBgActive;
 outlineButtonBgRipple: lightButtonBgRipple;
@@ -77,11 +77,11 @@ outlineButtonBgRipple: lightButtonBgRipple;
 menuBg: COLOR_DARK;
 menuBgOver: windowBgOver;
 menuBgRipple: windowBgRipple;
-menuIconFg: COLOR_GRAY;                         // Цвет иконок (бутерброд слева, прокрутка вниз, скрепка..)
-menuIconFgOver: COLOR_GREEN_LIGHT;              // Цвет иконок при наведении (бутерброд слева, прокрутка вниз, скрепка..)
-menuSubmenuArrowFg: #373737;                    // (неизвестно)
+menuIconFg: COLOR_GRAY;                         // Icons color (left menu button, scroll down, paperclip..)
+menuIconFgOver: COLOR_GREEN_LIGHT;              // Icons color on hover (left menu button, scroll down, paperclip..)
+menuSubmenuArrowFg: #373737;                    // (unknown)
 menuFgDisabled: #cccccc;
-menuSeparatorFg: COLOR_DARK;                    // (неизвестно)
+menuSeparatorFg: COLOR_DARK;                    // (unknown)
 
 scrollBarBg: #00000053;                         // Scrollbar current position
 scrollBarBgOver: #0000007a;                     // Mouse over scrollbar current position
@@ -97,7 +97,7 @@ radialBg: #00000056;
 placeholderFg: COLOR_GRAY;                      // Inactive input box placeholder text
 placeholderFgActive: #aaaaaa;                   // Active input box placeholder text
 inputBorderFg: #e0e0e0;
-filterInputBorderFg: COLOR_GREEN_DARK;          // Рамка поиска
+filterInputBorderFg: COLOR_GREEN_DARK;          // Search field border
 filterInputInactiveBg: windowBgOver;
 checkboxFg: #b3b3b3;
 
@@ -109,9 +109,9 @@ tooltipFg: #5d6c80;
 tooltipBorderFg: #c9d1db;
 
 // custom title bar for Windows and macOS
-titleBg: COLOR_DARK;                            // Верхняя полоса
+titleBg: COLOR_DARK;                            // Title bar
 titleShadow: #00000003;
-titleButtonFg: #ababab;                         // Кнопки верхней полосы (свернуть/развернуть/закрыть)
+titleButtonFg: #ababab;                         // Title bar buttons(min/max/close)
 titleButtonBgOver: #e5e5e5;
 titleButtonFgOver: #9a9a9a;
 titleButtonCloseBgOver: #e81123;
@@ -133,11 +133,11 @@ cancelIconFg: menuIconFg;
 cancelIconFgOver: menuIconFgOver;
 
 // boxes
-boxBg: COLOR_DARK;                              // Цвет фона всплывающих окон
+boxBg: COLOR_DARK;                              // Popup windows background color
 boxTextFg: COLOR_GRAY;
 boxTextFgGood: #4ab44a;
 boxTextFgError: #d84d4d;
-boxTitleFg: COLOR_WHITE;                        // Заголовки вспл.окон (сессии, контакты...)
+boxTitleFg: COLOR_WHITE;                        // Popup windows titles color (sessions, contacts...)
 boxSearchBg: boxBg;
 boxSearchCancelIconFg: cancelIconFg;
 boxSearchCancelIconFgOver: cancelIconFgOver;
@@ -148,7 +148,7 @@ boxTitleCloseFgOver: cancelIconFgOver;
 
 membersAboutLimitFg: windowSubTextFgOver;
 
-contactsBg: COLOR_DARK;                         // Фон списка контактов
+contactsBg: COLOR_DARK;                         // Contacts list background color
 contactsBgOver: windowBgOver;                   // Contacts list mouse over background
 contactsNameFg: COLOR_WHITE;
 contactsStatusFg: COLOR_GRAY;                   // Contacts list last seen
@@ -175,22 +175,22 @@ introCoverPlaneTop: COLOR_WHITE;
 dialogsMenuIconFg: menuIconFg;
 dialogsMenuIconFgOver: menuIconFgOver;
 
-dialogsBg: COLOR_DARK;                          // Фон списка чатов
+dialogsBg: COLOR_DARK;                          // Chats list background color
 dialogsNameFg: COLOR_WHITE;
 dialogsChatIconFg: dialogsNameFg;
 dialogsDateFg: COLOR_GRAY;                      // Chats list date text
 dialogsTextFg: COLOR_GRAY;                      // Chats list message preview text
 dialogsTextFgService: windowActiveTextFg;       // Chats list message preview sender name
-dialogsDraftFg: #dd4b39;                        // Слово "Черновики" в списке чатов
+dialogsDraftFg: #dd4b39;                        // "Draft" word
 dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: COLOR_WHITE;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: #5dc452;
 dialogsUnreadBg: #008000;                       // Chats list unread counter background
-dialogsUnreadBgMuted: #999999;                  // Счётчик непрочитанных (mute) + цвет пинов (?)
-dialogsUnreadFg: COLOR_WHITE;                   // Цвет текста счётчика непрочитанных
+dialogsUnreadBgMuted: #999999;                  // Unread counter (for muted chats) + pins color(?)
+dialogsUnreadFg: COLOR_WHITE;                   // Unread counter text color
 
-dialogsBgOver: #363838;                         // Фон чата в списке чатов при наведении курсора
+dialogsBgOver: #363838;                         // Inactive chat color on hover
 dialogsNameFgOver: #ededed;
 dialogsChatIconFgOver: dialogsNameFgOver;
 dialogsDateFgOver: windowSubTextFgOver;
@@ -205,7 +205,7 @@ dialogsUnreadBgOver: dialogsUnreadBg;
 dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
 dialogsUnreadFgOver: dialogsUnreadFg;
 
-dialogsBgActive: #008000;                       // Цвет активного чата в списке чатов
+dialogsBgActive: #008000;                       // Active chat color (in chats list)
 dialogsNameFgActive: COLOR_WHITE;
 dialogsChatIconFgActive: dialogsNameFgActive;
 dialogsDateFgActive: COLOR_WHITE;
@@ -223,9 +223,9 @@ dialogsUnreadFgActive: dialogsBgActive;
 dialogsForwardBg: dialogsBgActive;
 dialogsForwardFg: dialogsNameFgActive;
 
-searchedBarBg: COLOR_DARK;                      // Фон окна результатов поиска
+searchedBarBg: COLOR_DARK;                      // Search results window background color
 searchedBarBorder: COLOR_GREEN_DARK;
-searchedBarFg: COLOR_GREEN_LIGHT;               // Цвет текста результатов поиска
+searchedBarFg: COLOR_GREEN_LIGHT;               // Search results text color
 
 // history
 topBarBg: COLOR_DARK;                           // Chat header background
@@ -237,8 +237,8 @@ stickerPanDeleteBg: #000000cc;
 stickerPanDeleteFg: COLOR_WHITE;
 stickerPreviewBg: #2f2f2fCC;                    // Sticker preview background
 
-historyTextInFg: #adadad;                       // Цвет текста входящих сообщений
-historyTextOutFg: #ededed;                      // Цвет текста исходящих сообщений
+historyTextInFg: #adadad;                       // Incoming messages TEXT color
+historyTextOutFg: #ededed;                      // Outcoming messages TEXT color
 historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
 historyFileNameInFg: historyTextInFg;
@@ -246,36 +246,36 @@ historyFileNameOutFg: historyTextOutFg;
 historyOutIconFg: dialogsSentIconFg;
 historyOutIconFgSelected: #4da79f;
 historyIconFgInverted: COLOR_WHITE;
-historySendingOutIconFg: #98d292;               // Значок "часы" при отправке файла (исходящий)
-historySendingInIconFg: #a0adb5;                // Значок "часы" при отправке файла (входящий)
+historySendingOutIconFg: #98d292;               // "Clock" icon while sending file (outcoming)
+historySendingInIconFg: #a0adb5;                // "Clock" icon while sending file (incoming)
 historySendingInvertedIconFg: COLOR_WHITE;
 
 historySystemBg: #89a0b47f;
 historySystemBgSelected: #bbc8d4a2;
 historySystemFg: COLOR_WHITE;
 
-historyUnreadBarBg: #424444;                    // Фон полосы "Непрочитанные сообщения"
+historyUnreadBarBg: #424444;                    // Unread messages bar color
 historyUnreadBarBorder: COLOR_DARK;
 historyUnreadBarFg: #ededed;
 
-historyForwardChooseBg: #0000004c;              // Фон окна "Выберите получателя" (при пересылке)
-historyForwardChooseFg: COLOR_WHITE;            // Цвет текста "Выберите получателя" (при пересылке)
+historyForwardChooseBg: #0000004c;              // "Choose recipient" BACKGROUND color (forwarding)
+historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" TEXT color (forwarding)
 
-historyPeer1NameFg: #ff9100;                    // Group chat sender name - Оранжевый
+historyPeer1NameFg: #ff9100;                    // Group chat sender name - Orange
 historyPeer1UserpicBg: #e17076;
-historyPeer2NameFg: #4fad2d;                    // Зелёный
+historyPeer2NameFg: #4fad2d;                    // Green
 historyPeer2UserpicBg: #7bc862;
-historyPeer3NameFg: #d09306;                    // Золотой
+historyPeer3NameFg: #d09306;                    // Gold
 historyPeer3UserpicBg: #e5ca77;
-historyPeer4NameFg: #15cd7d;                    // Ярко-зелёный (салатовый)
+historyPeer4NameFg: #15cd7d;                    // Light green
 historyPeer4UserpicBg: #65aadd;
-historyPeer5NameFg: #9a4ff7;                    // Фиолетовый
+historyPeer5NameFg: #9a4ff7;                    // Violet
 historyPeer5UserpicBg: #a695e7;
-historyPeer6NameFg: #cd4073;                    // Малиновый
+historyPeer6NameFg: #cd4073;                    // "Raspberry"
 historyPeer6UserpicBg: #ee7aae;
-historyPeer7NameFg: #2996ad;                    // Цвет морской волны
+historyPeer7NameFg: #2996ad;                    // Cyan
 historyPeer7UserpicBg: #6ec9cb;
-historyPeer8NameFg: #ce671b;                    // Оранжевый (ещё один?)
+historyPeer8NameFg: #ce671b;                    // One more orange?!
 historyPeer8UserpicBg: #faa774;
 historyPeerUserpicFg: COLOR_WHITE;
 
@@ -302,15 +302,15 @@ msgInDateFg: #a0acb6;                           // Incoming message date text
 msgInDateFgSelected: COLOR_GREEN_LIGHT;
 msgOutDateFg: COLOR_GRAY;                       // Outgoing message date text
 msgOutDateFgSelected: COLOR_GREEN_DARK;
-msgServiceFg: COLOR_WHITE;                      // Цвет текста сервисных сообщений (присоединился/ушёл...)
-msgServiceBg: #363838;                          // Цвет фона сервисных сообщений (присоединился/ушёл...)
+msgServiceFg: COLOR_WHITE;                      // Service messages TEXT color (join, left etc)
+msgServiceBg: #363838;                          // Service messages BACKGROUND color (join, left etc)
 msgServiceBgSelected: #8ca0b3a2;
 msgInReplyBarColor: COLOR_GREEN_DARK;
 msgInReplyBarSelColor: COLOR_GREEN_DARK;
 msgOutReplyBarColor: COLOR_GREEN_DARK;
 msgOutReplyBarSelColor: COLOR_GREEN_DARK;
-msgInMonoFg: COLOR_GREEN_LIGHT;                 // Моноширинный текст / входящие
-msgOutMonoFg: COLOR_GREEN_LIGHT;                // Моноширинный текст / исходящие
+msgInMonoFg: COLOR_GREEN_LIGHT;                 // Monowidth font / incoming msg
+msgOutMonoFg: COLOR_GREEN_LIGHT;                // Monowidth font / outcoming msg
 msgDateImgFg: msgServiceFg;						
 msgDateImgBg: #00000054;                        // Download / play / etc overlay backgrounds
 msgDateImgBgOver: #00000074;                    // Mouse over download / play / etc overlay backgrounds
@@ -367,9 +367,9 @@ msgWaveformOutActiveSelected: #6badad;
 msgWaveformOutInactive: #b3e2b4;
 msgWaveformOutInactiveSelected: #91c3c3;
 
-msgBotKbOverBgAdd: COLOR_DARK;                   // Бот-клавиатура (под курсором)
+msgBotKbOverBgAdd: COLOR_DARK;                   // Inline button (hover)
 msgBotKbIconFg: COLOR_GREEN_RIPPLE_ACTIVE;       // ????
-msgBotKbRippleBg: #00000020;                     // Инлайн-кнопка (нажать и удерживать)
+msgBotKbRippleBg: #00000020;                     // Inline button (press & hold)
 
 mediaInFg: msgInDateFg;
 mediaInFgSelected: msgInDateFgSelected;
