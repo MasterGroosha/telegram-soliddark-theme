@@ -120,10 +120,10 @@ titleFgActive: #3e3c3e;                         // Active title bar text (Mac)
 titleFg: #acacac;                               // Inactive title bar text (Mac)
 
 // tray icon
-trayCounterBg: #f23c34;
-trayCounterBgMute: #888888;
-trayCounterFg: COLOR_WHITE;
-trayCounterBgMacInvert: COLOR_WHITE;
+trayCounterBg: #f23c34;                         // Unread messages counter background in tray (not muted, default red)
+trayCounterBgMute: #888888;                     // Unread messages counter background in tray (muted, default gray)
+trayCounterFg: COLOR_WHITE;                     // Unread messages counter text (number)
+trayCounterBgMacInvert: COLOR_WHITE;            
 trayCounterFgMacInvert: COLOR_WHITE;
 
 // layers
@@ -134,9 +134,9 @@ cancelIconFgOver: menuIconFgOver;
 
 // boxes
 boxBg: COLOR_DARK;                              // Popup windows background color
-boxTextFg: COLOR_GRAY;
-boxTextFgGood: #4ab44a;
-boxTextFgError: #d84d4d;
+boxTextFg: COLOR_GRAY;                          // Popup windows text color
+boxTextFgGood: #4ab44a;                         // Popup windows "good" text (e.g. "Username available")
+boxTextFgError: #d84d4d;                        // Popup windows "bad" text (e.g. "Username already taken")
 boxTitleFg: COLOR_WHITE;                        // Popup windows titles color (sessions, contacts...)
 boxSearchBg: boxBg;
 boxSearchCancelIconFg: cancelIconFg;
@@ -155,19 +155,19 @@ contactsStatusFg: COLOR_GRAY;                   // Contacts list last seen
 contactsStatusFgOver: windowSubTextFgOver;
 contactsStatusFgOnline: windowActiveTextFg;
 
-photoCropFadeBg: layerBg;
-photoCropPointFg: COLOR_WHITE;
-
+photoCropFadeBg: layerBg;                       // "Out-of-bounds" area in photo cropping (avatars etc...)
+photoCropPointFg: COLOR_WHITE;                  // Photo crop "corners" (which you drag to crop photo)
+ 
 // intro
 introBg: COLOR_DARK;
 introTitleFg: windowBoldFg;
 introDescriptionFg: COLOR_GRAY;
 introErrorFg: COLOR_GRAY;
 
-introCoverTopBg: #0f89d0;
-introCoverBottomBg: #39b0f0;
-introCoverIconsFg: #5ec6ff;
-introCoverPlaneTrace: #5ec6ff69;
+introCoverTopBg: #0f89d0;                      // These lines refer to Telegram "plane" logo...
+introCoverBottomBg: #39b0f0;                   // ... on "startup" screen, before entering phone number...
+introCoverIconsFg: #5ec6ff;                    // ... unfortunately, this requires lots of logouts and logins...
+introCoverPlaneTrace: #5ec6ff69;               // ... so not possible to test this. Sorry!
 introCoverPlaneInner: #c6d8e8;
 introCoverPlaneOuter: #a1bed4;
 introCoverPlaneTop: COLOR_WHITE;
@@ -182,8 +182,8 @@ dialogsDateFg: COLOR_GRAY;                      // Chats list date text
 dialogsTextFg: COLOR_GRAY;                      // Chats list message preview text
 dialogsTextFgService: windowActiveTextFg;       // Chats list message preview sender name
 dialogsDraftFg: #dd4b39;                        // "Draft" word
-dialogsVerifiedIconBg: windowBgActive;
-dialogsVerifiedIconFg: COLOR_WHITE;
+dialogsVerifiedIconBg: windowBgActive;          // Verification icon background
+dialogsVerifiedIconFg: COLOR_WHITE;             // Verification icon check color
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: #5dc452;
 dialogsUnreadBg: #008000;                       // Chats list unread counter background
@@ -211,7 +211,7 @@ dialogsChatIconFgActive: dialogsNameFgActive;
 dialogsDateFgActive: COLOR_WHITE;
 dialogsTextFgActive: COLOR_WHITE;
 dialogsTextFgServiceActive: dialogsTextFgActive;
-dialogsDraftFgActive: #c6e1f7;
+dialogsDraftFgActive: #c6e1f7;                  // "Draft" word when chat is selected
 dialogsVerifiedIconBgActive: dialogsTextFgActive;
 dialogsVerifiedIconFgActive: dialogsBgActive;
 dialogsSendingIconFgActive: COLOR_WHITE;
@@ -357,14 +357,14 @@ historyFileThumbIconFgSelected: COLOR_WHITE;
 historyFileThumbRadialFg: COLOR_WHITE;
 historyFileThumbRadialFgSelected: COLOR_WHITE;
 
-msgWaveformInActive: windowBgActive;
-msgWaveformInActiveSelected: #51a3d3;
-msgWaveformInInactive: #d4dee6;
-msgWaveformInInactiveSelected: #9cc1e1;
-msgWaveformOutActive: #78c67f;
-msgWaveformOutActiveSelected: #6badad;
-msgWaveformOutInactive: #b3e2b4;
-msgWaveformOutInactiveSelected: #91c3c3;
+msgWaveformInActive: windowBgActive;             // Incoming Voice "heard" part
+msgWaveformInActiveSelected: COLOR_GREEN_LIGHT;  // Selected incoming Voice "heard" part
+msgWaveformInInactive: #d4dee6;                  // Incoming Voice "unheard" part
+msgWaveformInInactiveSelected: COLOR_WHITE;      // Selected incoming Voice "unheard" part
+msgWaveformOutActive: windowBgActive;            // Outgoing Voice "heard" part
+msgWaveformOutActiveSelected: COLOR_GREEN_LIGHT; // Selected outgoing Voice "heard" part
+msgWaveformOutInactive: COLOR_WHITE;             // Outgoing Voice "unheard" part
+msgWaveformOutInactiveSelected: COLOR_WHITE;     // Selected outgoing Voice "unheard" part
 
 msgBotKbOverBgAdd: COLOR_DARK;                   // Inline button (hover)
 msgBotKbIconFg: COLOR_WHITE;                     // Inline button icon color (URL Buttons, for example)
