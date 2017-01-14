@@ -385,11 +385,11 @@ toastFg: COLOR_WHITE;
 reportSpamBg: emojiPanHeaderBg;
 reportSpamFg: COLOR_GRAY;
 
-historyToDownShadow: #00000040;
-historyComposeAreaBg: msgInBg;
+historyToDownShadow: #00000040;                  // "Scroll to bottom" button shadow
+historyComposeAreaBg: msgInBg;                   // Text input field background 
 historyComposeAreaFg: COLOR_WHITE;               // Text color in "Type your message" field
 historyComposeAreaFgService: msgInDateFg;
-historyComposeIconFg: menuIconFg;
+historyComposeIconFg: menuIconFg;                // Text input field: Paperclip and Smile icons
 historyComposeIconFgOver: menuIconFgOver;
 historySendIconFg: windowBgActive;
 historySendIconFgOver: windowBgActive;
@@ -408,6 +408,9 @@ overviewCheckFg: COLOR_DARK;
 overviewCheckFgActive: COLOR_DARK;
 overviewPhotoSelectOverlay: #40ace333;
 profileStatusFgOver: #7c99b2;
+profileVerifiedCheckBg: windowBgActive;
+profileVerifiedCheckFg: windowFgActive;
+profileAdminStartFg: COLOR_GREEN_LIGHT;
 notificationsBoxMonitorFg: COLOR_GRAY;
 notificationsBoxScreenBg: dialogsBgActive;
 notificationSampleUserpicFg: windowBgActive;
