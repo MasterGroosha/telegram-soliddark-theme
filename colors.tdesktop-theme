@@ -104,9 +104,10 @@ checkboxFg: #b3b3b3;
 sliderBgInactive: #e1eaef;                      // Inactive media player button (prev/next song)
 sliderBgActive: windowBgActive;                 // Active media player button (prev/next song)
 
-tooltipBg: #eef2f5;
-tooltipFg: #5d6c80;
-tooltipBorderFg: #c9d1db;
+tooltipBg: #eef2f5;                             // Tooltip background (hover on message sent time)
+tooltipFg: #5d6c80;                             // Tooltip text color
+tooltipBorderFg: #c9d1db;                       // Tooltip border color
+
 
 // custom title bar for Windows and macOS
 titleBg: COLOR_DARK;                            // Title bar
