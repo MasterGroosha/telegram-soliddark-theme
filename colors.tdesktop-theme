@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                              //
-//                          SolidDark theme v1.1 for Telegram Desktop.                          //
+//                          SolidDark theme v1.2 for Telegram Desktop.                          //
 //                                                                                              //
 //                                                                                              //
 //        Source code: https://github.com/MasterGroosha/telegram-soliddark-theme                //
@@ -15,7 +15,7 @@
 
 COLOR_GRAY: #999999;                            
 COLOR_DARK: #2f2f2f;                            // Main color (dark one)
-COLOR_GREEN_DARK: #008c00;                      // Accent color
+COLOR_GREEN_DARK: #008000;                      // Accent color
 COLOR_GREEN_LIGHT: #15cd7d;                     // Accent color #2 (just like first one with slight changes)
 COLOR_GREEN_RIPPLE_ACTIVE: #025618;
 
@@ -165,13 +165,13 @@ introTitleFg: windowBoldFg;
 introDescriptionFg: COLOR_GRAY;
 introErrorFg: COLOR_GRAY;
 
-introCoverTopBg: #0f89d0;                      // These lines refer to Telegram "plane" logo...
-introCoverBottomBg: #39b0f0;                   // ... on "startup" screen, before entering phone number...
-introCoverIconsFg: #5ec6ff;                    // ... unfortunately, this requires lots of logouts and logins...
-introCoverPlaneTrace: #5ec6ff69;               // ... so not possible to test this. Sorry!
-introCoverPlaneInner: #c6d8e8;
-introCoverPlaneOuter: #a1bed4;
-introCoverPlaneTop: COLOR_WHITE;
+introCoverTopBg: COLOR_DARK;                   // Gradient finish at the top of the login screen
+introCoverBottomBg: COLOR_DARK;                // Gradient start at the bottom of the login screen
+introCoverIconsFg: COLOR_GREEN_DARK;           // Icons and clouds colors
+introCoverPlaneTrace: #15cd7d69;               // Plane trace
+introCoverPlaneInner: #c6d8e8;                 // Plane color inside
+introCoverPlaneOuter: #a1bed4;                 // Plane color outside
+introCoverPlaneTop: COLOR_WHITE;               // Main plane color
 
 dialogsMenuIconFg: menuIconFg;
 dialogsMenuIconFgOver: menuIconFgOver;
@@ -187,7 +187,7 @@ dialogsVerifiedIconBg: windowBgActive;          // Verification icon background
 dialogsVerifiedIconFg: COLOR_WHITE;             // Verification icon check color
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: #5dc452;
-dialogsUnreadBg: #008000;                       // Chats list unread counter background
+dialogsUnreadBg: COLOR_GREEN_DARK;              // Chats list unread counter background
 dialogsUnreadBgMuted: #999999;                  // Unread counter (for muted chats) + pins color(?)
 dialogsUnreadFg: COLOR_WHITE;                   // Unread counter text color
 
@@ -206,7 +206,7 @@ dialogsUnreadBgOver: dialogsUnreadBg;
 dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
 dialogsUnreadFgOver: dialogsUnreadFg;
 
-dialogsBgActive: #008000;                       // Active chat color (in chats list)
+dialogsBgActive: COLOR_GREEN_DARK;             // Active chat color (in chats list)
 dialogsNameFgActive: COLOR_WHITE;
 dialogsChatIconFgActive: dialogsNameFgActive;
 dialogsDateFgActive: COLOR_WHITE;
@@ -438,20 +438,20 @@ mediaviewMenuBg: #383838;
 mediaviewMenuBgOver: #505050;
 mediaviewMenuBgRipple: #676767;
 mediaviewMenuFg: COLOR_WHITE;
-mediaviewBg: #222222eb;
+mediaviewBg: #222222eb;                          // Background for all media previews
 mediaviewVideoBg: imageBg;
-mediaviewControlBg: #0000003c;
+mediaviewControlBg: #0000003c;                   // Background for some controls in media preview window
 mediaviewControlFg: COLOR_WHITE;
-mediaviewCaptionBg: #11111180;
+mediaviewCaptionBg: #11111180;                   // Background for caption in media preview window
 mediaviewCaptionFg: mediaviewControlFg;
 mediaviewTextLinkFg: #91d9ff;
 mediaviewSaveMsgBg: toastBg;
 mediaviewSaveMsgFg: toastFg;
-mediaviewPlaybackActive: #c7c7c7;
-mediaviewPlaybackInactive: #252525;
-mediaviewPlaybackActiveOver: COLOR_WHITE;
-mediaviewPlaybackInactiveOver: #474747;
-mediaviewPlaybackProgressFg: COLOR_WHITE;
+mediaviewPlaybackActive: #c7c7c7;                // Controls color in video preview (default)
+mediaviewPlaybackInactive: #252525;              // Timeline color (default)
+mediaviewPlaybackActiveOver: COLOR_WHITE;        // Controls color in video preview (hover)
+mediaviewPlaybackInactiveOver: #474747;          // Timeline color (hover)
+mediaviewPlaybackProgressFg: COLOR_WHITE;        // Time color in video preview
 mediaviewPlaybackIconFg: mediaviewPlaybackActive;
 mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver;
 mediaviewTransparentBg: COLOR_WHITE;
