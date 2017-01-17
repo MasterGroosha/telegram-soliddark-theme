@@ -4,7 +4,7 @@ This repo contais some (or currently one :D) Solid Dark themes for Telegram Desk
 
 Here's for example how Solid Dark Green looks like:
 
-![Solid Dark Green](https://pp.vk.me/c638426/v638426512/18005/X3QY1lgXg3o.jpg)
+![Solid Dark Green](https://pp.vk.me/c638026/v638026512/30754/oIQrDEXftmg.jpg)
 
 Also looks fine in JetBrains' IDEs (IDEA, pyCharm and so on...)
 ![How it looks in pyCharm](https://pp.vk.me/c637720/v637720512/2c4c1/sxbeyUq-uu4.jpg)
