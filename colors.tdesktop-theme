@@ -111,14 +111,27 @@ tooltipBorderFg: #c9d1db;                       // Tooltip border color
 
 // custom title bar for Windows and macOS
 titleBg: COLOR_DARK;                            // Title bar
+titleBgActive: titleBg;
+titleButtonBg: titleBg;
 titleShadow: #00000003;
 titleButtonFg: #ababab;                         // Title bar buttons(min/max/close)
 titleButtonBgOver: #dbdbdb;                     // Title bar min/max background (hover)
 titleButtonFgOver: #9a9a9a;                     // Title bar min/max icons 
+titleButtonBgActive: titleButtonBg;
+titleButtonFgActive: titleButtonFg;
+titleButtonBgActiveOver: titleButtonBgOver;
+titleButtonFgActiveOver: titleButtonFgOver;
+titleButtonCloseBg: titleButtonBg;
+titleButtonCloseFg: titleButtonFg;
 titleButtonCloseBgOver: #e81123;
 titleButtonCloseFgOver: COLOR_WHITE;
+titleButtonCloseBgActive: titleButtonCloseBg;
+titleButtonCloseFgActive: titleButtonCloseFg;
+titleButtonCloseBgActiveOver: titleButtonCloseBgOver;
+titleButtonCloseFgActiveOver: titleButtonCloseFgOver;
 titleFgActive: #3e3c3e;                         // Active title bar text (Mac)
 titleFg: #acacac;                               // Inactive title bar text (Mac)
+titleFgActive: #3e3c3e;
 
 // tray icon
 trayCounterBg: #f23c34;                         // Unread messages counter background in tray (not muted, default red)
@@ -270,7 +283,7 @@ historyPeer3NameFg: #d09306;                    // Gold
 historyPeer3UserpicBg: #e5ca77;
 historyPeer4NameFg: #15cd7d;                    // Light green
 historyPeer4UserpicBg: #65aadd;
-historyPeer5NameFg: #9a4ff7;                    // Violet
+historyPeer5NameFg: #a363f2;                    // Violet
 historyPeer5UserpicBg: #a695e7;
 historyPeer6NameFg: #cd4073;                    // "Raspberry"
 historyPeer6UserpicBg: #ee7aae;
@@ -386,6 +399,11 @@ toastFg: COLOR_WHITE;
 reportSpamBg: emojiPanHeaderBg;
 reportSpamFg: COLOR_GRAY;
 
+historyToDownBg: #424444;                        // "Scroll to bottom" button background
+historyToDownBgOver: windowBgOver;               // "Scroll to bottom" button background (hover)
+historyToDownBgRipple: windowBgRipple;           // "Scroll to bottom" button background (press & hold)
+historyToDownFg: menuIconFg;                     // "Scroll to bottom" internal icon color
+historyToDownFgOver: menuIconFgOver;             // "Scroll to bottom" internal icon color (hover)
 historyToDownShadow: #00000040;                  // "Scroll to bottom" button shadow
 historyComposeAreaBg: msgInBg;                   // Text input field background 
 historyComposeAreaFg: COLOR_WHITE;               // Text color in "Type your message" field
