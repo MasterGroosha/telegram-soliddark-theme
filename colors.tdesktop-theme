@@ -88,8 +88,8 @@ scrollBarBgOver: #15cd7d7a;                     // Mouse over scrollbar (chats l
 scrollBg: #0000001a;                            // Scrollbar (chats list) background
 scrollBgOver: #0000002c;                        // Mouse over scrollbar (chats list) background
 
-smallCloseIconFg: #c7c7c7;
-smallCloseIconFgOver: #a3a3a3;
+smallCloseIconFg: #c7c7c7;                      // Notification close button (default)
+smallCloseIconFgOver: #a3a3a3;                  // Notification close button (hover)
 
 radialFg: COLOR_WHITE;
 radialBg: #00000056;
@@ -110,9 +110,9 @@ tooltipBorderFg: #c9d1db;                       // Tooltip border color
 
 
 // custom title bar for Windows and macOS
-titleBg: COLOR_DARK;                            // Title bar
-titleBgActive: titleBg;
-titleButtonBg: titleBg;
+titleBg: COLOR_DARK;                            // Title bar color
+titleBgActive: titleBg;                         // Title bar color when Telegram window is focused
+titleButtonBg: titleBg;                         // Title bar min/max/close buttons background
 titleShadow: #00000003;
 titleButtonFg: #ababab;                         // Title bar buttons(min/max/close)
 titleButtonBgOver: #dbdbdb;                     // Title bar min/max background (hover)
@@ -123,8 +123,8 @@ titleButtonBgActiveOver: titleButtonBgOver;
 titleButtonFgActiveOver: titleButtonFgOver;
 titleButtonCloseBg: titleButtonBg;
 titleButtonCloseFg: titleButtonFg;
-titleButtonCloseBgOver: #e81123;
-titleButtonCloseFgOver: COLOR_WHITE;
+titleButtonCloseBgOver: #e81123;                // Close button background (hover)
+titleButtonCloseFgOver: COLOR_WHITE;            // Close button icon color (hover)
 titleButtonCloseBgActive: titleButtonCloseBg;
 titleButtonCloseFgActive: titleButtonCloseFg;
 titleButtonCloseBgActiveOver: titleButtonCloseBgOver;
@@ -141,7 +141,7 @@ trayCounterBgMacInvert: COLOR_WHITE;
 trayCounterFgMacInvert: COLOR_WHITE;
 
 // layers
-layerBg: #0000007f;
+layerBg: #0000007f;                             // Current chat tint when forwarding message
 
 cancelIconFg: menuIconFg;
 cancelIconFgOver: menuIconFgOver;
@@ -222,9 +222,9 @@ dialogsUnreadFgOver: dialogsUnreadFg;
 dialogsBgActive: COLOR_GREEN_DARK;             // Active chat color (in chats list)
 dialogsNameFgActive: COLOR_WHITE;
 dialogsChatIconFgActive: dialogsNameFgActive;
-dialogsDateFgActive: COLOR_WHITE;
-dialogsTextFgActive: COLOR_WHITE;
-dialogsTextFgServiceActive: dialogsTextFgActive;
+dialogsDateFgActive: COLOR_WHITE;               // Active chat date color
+dialogsTextFgActive: COLOR_WHITE;               // Active chat message preview color
+dialogsTextFgServiceActive: dialogsTextFgActive;// Active chat service messages color
 dialogsDraftFgActive: #c6e1f7;                  // "Draft" word when chat is selected
 dialogsVerifiedIconBgActive: dialogsTextFgActive;
 dialogsVerifiedIconFgActive: dialogsBgActive;
@@ -257,9 +257,9 @@ historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
 historyFileNameInFg: historyTextInFg;
 historyFileNameOutFg: historyTextOutFg;
-historyOutIconFg: dialogsSentIconFg;            // "Eye" and "Ticks" color for outgoing messages (selected)
-historyOutIconFgSelected: COLOR_GREEN_LIGHT;    // "Eye" and "Ticks" color for outgoing messages (selected)
-historyIconFgInverted: COLOR_WHITE;
+historyOutIconFg: dialogsSentIconFg;            // "Eye" and "Checks" color for outgoing messages (selected)
+historyOutIconFgSelected: COLOR_GREEN_LIGHT;    // "Eye" and "Checks" color for outgoing messages (selected)
+historyIconFgInverted: COLOR_WHITE;             // "Checks" on stickers (outgoing)
 historySendingOutIconFg: #98d292;               // "Clock" icon while sending file (outgoing)
 historySendingInIconFg: #a0adb5;                // "Clock" icon while sending file (incoming)
 historySendingInvertedIconFg: COLOR_WHITE;
@@ -268,9 +268,9 @@ historySystemBg: #89a0b47f;
 historySystemBgSelected: #bbc8d4a2;
 historySystemFg: COLOR_WHITE;
 
-historyUnreadBarBg: #424444;                    // Unread messages bar color
-historyUnreadBarBorder: COLOR_DARK;
-historyUnreadBarFg: #ededed;
+historyUnreadBarBg: #424444;                    // Unread messages bar background color
+historyUnreadBarBorder: COLOR_DARK;             // Unread messages bar border color
+historyUnreadBarFg: #ededed;                    // Unread messages bar text color
 
 historyForwardChooseBg: #0000004c;              // "Choose recipient" BACKGROUND color (forwarding)
 historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" TEXT color (forwarding)
@@ -393,8 +393,8 @@ youtubePlayIconBg: #e83131c8;
 youtubePlayIconFg: COLOR_WHITE;
 videoPlayIconBg: #0000007f;
 videoPlayIconFg: COLOR_WHITE;
-toastBg: #000000b2;
-toastFg: COLOR_WHITE;
+toastBg: #000000b2;                              // Video player control block background
+toastFg: COLOR_WHITE;                            // Video player control block text color
 
 reportSpamBg: emojiPanHeaderBg;
 reportSpamFg: COLOR_GRAY;
@@ -409,9 +409,9 @@ historyComposeAreaBg: msgInBg;                   // Text input field background
 historyComposeAreaFg: COLOR_WHITE;               // Text color in "Type your message" field
 historyComposeAreaFgService: msgInDateFg;
 historyComposeIconFg: menuIconFg;                // Text input field: Paperclip and Smile icons
-historyComposeIconFgOver: menuIconFgOver;
-historySendIconFg: windowBgActive;
-historySendIconFgOver: windowBgActive;
+historyComposeIconFgOver: menuIconFgOver;        // Text input field: Paperclip and Smile icons (hover)
+historySendIconFg: windowBgActive;               // Text input field: Send icon
+historySendIconFgOver: windowBgActive;           // Text input field: Send icon (hover)
 historyPinnedBg: historyComposeAreaBg;
 historyReplyBg: historyComposeAreaBg;
 historyReplyCancelFg: cancelIconFg;
@@ -422,20 +422,22 @@ historyComposeButtonBgOver: windowBgOver;
 historyComposeButtonBgRipple: windowBgRipple;
 
 // overview
-overviewCheckBg: #00000040;
-overviewCheckFg: COLOR_DARK;
-overviewCheckFgActive: COLOR_DARK;
-overviewPhotoSelectOverlay: #40ace333;
+overviewCheckBg: #00000040;                     // Circle background for check in shared media (default)
+overviewCheckFg: COLOR_DARK;                    // Circle background for check in shared media (selected file)
+overviewCheckFgActive: COLOR_DARK;              // Check color for selected files in shared media
+overviewPhotoSelectOverlay: #40ace333;          // Overlay color for selected files in shared media
+
 profileStatusFgOver: #7c99b2;
-profileVerifiedCheckBg: windowBgActive;
-profileVerifiedCheckFg: windowFgActive;
-profileAdminStartFg: COLOR_GREEN_LIGHT;
+profileVerifiedCheckBg: windowBgActive;         // Check background color for verified accounts (on profile page)
+profileVerifiedCheckFg: windowFgActive;         // Check color for verified accounts (on profile page)
+profileAdminStartFg: COLOR_GREEN_LIGHT;         // Star color for group/channhel admins and moderators (look in members list)
+
 notificationsBoxMonitorFg: COLOR_GRAY;
 notificationsBoxScreenBg: dialogsBgActive;
 notificationSampleUserpicFg: windowBgActive;
-notificationSampleCloseFg: #d7d7d7;
-notificationSampleTextFg: #d7d7d7;
-notificationSampleNameFg: #939393;
+notificationSampleCloseFg: #d7d7d7;             // Sample notifications close button color (Settings > Notifications position and count)
+notificationSampleTextFg: #d7d7d7;              // Sample notifications message text color
+notificationSampleNameFg: #939393;              // Sample notifications name color
 
 mainMenuBg: COLOR_DARK;                         // Left menu background (lower part, not buttons)
 mainMenuCoverBg: dialogsBgActive;               // Left menu background (upper part)
@@ -452,19 +454,19 @@ mediaviewFileYellowCornerFg: #e8a659;
 mediaviewFileGreenCornerFg: #49a957;
 mediaviewFileBlueCornerFg: #599dcf;
 mediaviewFileExtFg: activeButtonFg;
-mediaviewMenuBg: #383838;
-mediaviewMenuBgOver: #505050;
-mediaviewMenuBgRipple: #676767;
-mediaviewMenuFg: COLOR_WHITE;
-mediaviewBg: #222222eb;                          // Background for all media previews
+mediaviewMenuBg: #383838;                        // Menu background in media view menu
+mediaviewMenuBgOver: #505050;                    // Menu items (hover)
+mediaviewMenuBgRipple: #676767;                  // Menu items (press & hold)
+mediaviewMenuFg: COLOR_WHITE;                    // Text color in media view menu
+mediaviewBg: #222222eb;                          // Background for all content types in media view window
 mediaviewVideoBg: imageBg;
-mediaviewControlBg: #0000003c;                   // Background for some controls in media preview window
+mediaviewControlBg: #0000003c;                   // Background for arrows and close button in media view window
 mediaviewControlFg: COLOR_WHITE;
 mediaviewCaptionBg: #11111180;                   // Background for caption in media preview window
-mediaviewCaptionFg: mediaviewControlFg;
-mediaviewTextLinkFg: #91d9ff;
-mediaviewSaveMsgBg: toastBg;
-mediaviewSaveMsgFg: toastFg;
+mediaviewCaptionFg: mediaviewControlFg;          // Caption text color
+mediaviewTextLinkFg: #91d9ff;                    // Links color in captions 
+mediaviewSaveMsgBg: toastBg;                     // 'Something was saved to % folder' message background
+mediaviewSaveMsgFg: toastFg;                     // 'Something was saved to % folder' message text color
 mediaviewPlaybackActive: #c7c7c7;                // Controls color in video preview (default)
 mediaviewPlaybackInactive: #252525;              // Timeline color (default)
 mediaviewPlaybackActiveOver: COLOR_WHITE;        // Controls color in video preview (hover)
