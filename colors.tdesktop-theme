@@ -97,7 +97,7 @@ radialBg: #00000056;                            // Default radial loader backgro
 placeholderFg: COLOR_GRAY;                      // Inactive input box placeholder text
 placeholderFgActive: #aaaaaa;                   // Active input box placeholder text
 inputBorderFg: #e0e0e0;                         // Default input field bottom border (like in code input field when you log in and field is not focused)
-filterInputBorderFg: COLOR_GREEN_DARK;          // Default rounded input field border (like in chats list search field when field is focused)  // Default rounded input field background (like in chats list search field when field is inactive)
+filterInputBorderFg: COLOR_GREEN_DARK;          // Default rounded input field border (like in chats list search field when field is focused)
 filterInputInactiveBg: windowBgOver;            // Default rounded input field background (like in chats list search field when field is inactive)
 checkboxFg: #b3b3b3;                            // Default unchecked checkbox rounded rectangle (and also emoji category icons)
 
@@ -143,7 +143,7 @@ trayCounterFgMacInvert: COLOR_WHITE;            // Tray icon counter text when t
 layerBg: #0000007f;                             // Box and main menu background layer fade (for example, current chat tint when forwarding message)
 
 cancelIconFg: menuIconFg;                       // Default for settings close icon and box search cancel icon
-cancelIconFgOver: menuIconFgOver;               // efault for settings close icon and box search cancel icon with mouse over
+cancelIconFgOver: menuIconFgOver;               // Default for settings close icon and box search cancel icon with mouse over
 
 // boxes
 boxBg: COLOR_DARK;                              // Popup windows background color
