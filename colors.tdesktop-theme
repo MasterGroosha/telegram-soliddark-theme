@@ -64,10 +64,10 @@ lightButtonBgRipple: #363838;                   // Secondary button background c
 lightButtonFg: COLOR_WHITE;                     // Secondary button text color
 lightButtonFgOver: lightButtonFg;               // Secondary button text color (hover)
 
-attentionButtonFg: #d84343;                     // Default attention button text (like confirm button on log out)
+attentionButtonFg: #da4e4e;                     // Default attention button text (like confirm button on log out)
 attentionButtonFgOver: #d84343;                 // Default attention button text with mouse over
-attentionButtonBgOver: #ef9592;                 // Default attention button background with mouse over
-attentionButtonBgRipple: #d87c79;               // Default attention button ripple effect
+attentionButtonBgOver: #f4b5b3;                 // Default attention button background with mouse over
+attentionButtonBgRipple: #f1a09e;               // Default attention button ripple effect
 
 outlineButtonBg: COLOR_DARK;                    // Buttons background in profiles (shared media)
 outlineButtonBgOver: lightButtonBgOver;         // Buttons background in profiles (hover)
@@ -270,7 +270,7 @@ historyUnreadBarFg: #ededed;                    // Unread messages bar text colo
 historyForwardChooseBg: #0000004c;              // "Choose recipient" BACKGROUND color (forwarding)
 historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" TEXT color (forwarding)
 
-historyPeer1NameFg: #c03d33;                    // Group chat sender name - Red
+historyPeer1NameFg: #d05c53;                    // Group chat sender name - Red
 historyPeer1UserpicBg: #e17076;                 // Group chat userpic background - Red
 historyPeer2NameFg: #4fad2d;                    // Sender name - Green
 historyPeer2UserpicBg: #7bc862;                 // Userpic background - Green
