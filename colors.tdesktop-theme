@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                              //
-//                          SolidDark theme v1.2 for Telegram Desktop.                          //
+//                          SolidDark theme v1.3 for Telegram Desktop.                          //
 //                                                                                              //
 //                                                                                              //
 //        Source code: https://github.com/MasterGroosha/telegram-soliddark-theme                //
@@ -64,10 +64,10 @@ lightButtonBgRipple: #363838;                   // Secondary button background c
 lightButtonFg: COLOR_WHITE;                     // Secondary button text color
 lightButtonFgOver: lightButtonFg;               // Secondary button text color (hover)
 
-attentionButtonFg: #da4e4e;                     // Default attention button text (like confirm button on log out)
-attentionButtonFgOver: #d84343;                 // Default attention button text with mouse over
-attentionButtonBgOver: #f4b5b3;                 // Default attention button background with mouse over
-attentionButtonBgRipple: #f1a09e;               // Default attention button ripple effect
+attentionButtonFg: #f73e3e;                     // Default attention button text (like confirm button on log out)
+attentionButtonFgOver: #ffffff;                 // Default attention button text with mouse over
+attentionButtonBgOver: #a8232e;                 // Default attention button background with mouse over
+attentionButtonBgRipple: #d5333f;               // Default attention button ripple effect
 
 outlineButtonBg: COLOR_DARK;                    // Buttons background in profiles (shared media)
 outlineButtonBgOver: lightButtonBgOver;         // Buttons background in profiles (hover)
@@ -270,7 +270,7 @@ historyUnreadBarFg: #ededed;                    // Unread messages bar text colo
 historyForwardChooseBg: #0000004c;              // "Choose recipient" BACKGROUND color (forwarding)
 historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" TEXT color (forwarding)
 
-historyPeer1NameFg: #d05c53;                    // Group chat sender name - Red
+historyPeer1NameFg: #cc4d42;                    // Group chat sender name - Red
 historyPeer1UserpicBg: #e17076;                 // Group chat userpic background - Red
 historyPeer2NameFg: #4fad2d;                    // Sender name - Green
 historyPeer2UserpicBg: #7bc862;                 // Userpic background - Green
@@ -322,9 +322,10 @@ msgInReplyBarColor: COLOR_GREEN_DARK;           // Incoming msg: vertical bar ne
 msgInReplyBarSelColor: COLOR_GREEN_DARK;        // Incoming msg: vertical bar next to reply (selected)
 msgOutReplyBarColor: COLOR_GREEN_DARK;          // Outgoing msg: vertical bar next to reply
 msgOutReplyBarSelColor: COLOR_GREEN_DARK;       // Outgoing msg: vertical bar next to reply (selected)
+msgImgReplyBarColor: msgServiceFg;              // Sticker message reply outline
 msgInMonoFg: COLOR_GREEN_LIGHT;                 // Monowidth font / incoming msg
 msgOutMonoFg: COLOR_GREEN_LIGHT;                // Monowidth font / outgoing msg
-msgDateImgFg: msgServiceFg;						// Media message time text (like time text in a sent photo)
+msgDateImgFg: msgServiceFg;                     // Media message time text (like time text in a sent photo)
 msgDateImgBg: #00000054;                        // Media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver: #00000074;                    // Media message download icon circle background with mouse over (like file with thumbnail download icon)
 msgDateImgBgSelected: #1c4a7187;                // Selected media message time bubble background
