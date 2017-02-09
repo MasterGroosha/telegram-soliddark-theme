@@ -250,12 +250,18 @@ stickerPanDeleteBg: #000000cc;                  // Delete X button background fo
 stickerPanDeleteFg: COLOR_WHITE;                // Delete X button icon for custom sent stickers in stickers panel (legacy)
 stickerPreviewBg: #2f2f2fCC;                    // Sticker and GIF preview background (when you press and hold on a sticker)
 
-historyTextInFg: #adadad;                       // Incoming messages TEXT color
-historyTextOutFg: #efefef;                      // Outgoing messages TEXT color
-historyCaptionInFg: historyTextInFg;            // Incoming message media caption TEXT color
-historyCaptionOutFg: historyTextOutFg;          // Outgoing message media caption TEXT color
-historyFileNameInFg: historyTextInFg;           // Incoming message filename TEXT color
-historyFileNameOutFg: historyTextOutFg;         // Outgoing message filename TEXT color
+historyTextInFg: #adadad;                       // Incoming message text color
+historyTextInFgSelected: historyTextInFg;       // Selected incoming message text or text in a selected message
+historyTextOutFg: #efefef;                      // Outgoing message text color
+historyTextOutFgSelected: historyTextOutFg;     // Outgoing message selected text or text in a selected message
+historyLinkInFg: windowActiveTextFg;            // Incoming message link color
+historyLinkInFgSelected: historyLinkInFg;       // Incoming message link in a selected text or message
+historyLinkOutFg: windowActiveTextFg;           // Outgoing message link color
+historyLinkOutFgSelected: historyLinkOutFg;     // Outgoing message link in a selected text or message
+historyFileNameInFg: historyTextInFg;           // Incoming message filename text color
+historyFileNameInFgSelected: historyFileNameInFg; // Incoming media filename text in a selected message
+historyFileNameOutFg: historyTextOutFg;         // Outgoing message filename text color
+historyFileNameOutFgSelected: historyFileNameOutFg; // Outgoing media filename text in a selected message
 historyOutIconFg: dialogsSentIconFg;            // "Eye" and "Checks" color for outgoing messages (selected)
 historyOutIconFgSelected: COLOR_GREEN_LIGHT;    // "Eye" and "Checks" color for outgoing messages (selected)
 historyIconFgInverted: COLOR_WHITE;             // "Checks" on stickers (outgoing)
@@ -268,23 +274,31 @@ historyUnreadBarBorder: COLOR_DARK;             // Unread messages bar border co
 historyUnreadBarFg: #ededed;                    // Unread messages bar text color
 
 historyForwardChooseBg: #0000004c;              // "Choose recipient" BACKGROUND color (forwarding)
-historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" TEXT color (forwarding)
+historyForwardChooseFg: COLOR_WHITE;            // "Choose recipient" text color (forwarding)
 
 historyPeer1NameFg: #cc4d42;                    // Group chat sender name - Red
+historyPeer1NameFgSelected: historyPeer1NameFg; // Red group member name in a selected message
 historyPeer1UserpicBg: #e17076;                 // Group chat userpic background - Red
 historyPeer2NameFg: #4fad2d;                    // Sender name - Green
+historyPeer2NameFgSelected: historyPeer2NameFg; // Green group member name in a selected message
 historyPeer2UserpicBg: #7bc862;                 // Userpic background - Green
 historyPeer3NameFg: #d09306;                    // Sender name - Yellow
+historyPeer3NameFgSelected: historyPeer3NameFg; // Yellow group member name in a selected message
 historyPeer3UserpicBg: #e5ca77;                 // Userpic background - Yellow
 historyPeer4NameFg: #15cd7d;                    // Sender name - Light green
+historyPeer4NameFgSelected: historyPeer4NameFg; // Blue group member name in a selected message
 historyPeer4UserpicBg: #65aadd;                 // Userpic background - Blue
 historyPeer5NameFg: #a363f2;                    // Sender name - Purple
+historyPeer5NameFgSelected: historyPeer5NameFg; // Purple group member name in a selected message
 historyPeer5UserpicBg: #a695e7;                 // Userpic background - Light Purple
 historyPeer6NameFg: #cd4073;                    // Sender name - "Raspberry"
+historyPeer6NameFgSelected: historyPeer6NameFg; // "Raspberry" group member name in a selected message
 historyPeer6UserpicBg: #ee7aae;                 // Userpic background - Light "Raspberry"
 historyPeer7NameFg: #2996ad;                    // Sender name - Cyan
+historyPeer7NameFgSelected: historyPeer7NameFg; // Cyan group member name in a selected message
 historyPeer7UserpicBg: #6ec9cb;                 // Userpic background - Cyan
 historyPeer8NameFg: #ce671b;                    // Sender name - Orange
+historyPeer8NameFgSelected: historyPeer8NameFg; // Orange group member name in a selected message
 historyPeer8UserpicBg: #faa774;                 // Userpic background - Light Orange
 historyPeerUserpicFg: COLOR_WHITE;              // Default userpic initials
 
@@ -315,7 +329,7 @@ msgInDateFg: #a0acb6;                           // Incoming message date text
 msgInDateFgSelected: COLOR_GREEN_LIGHT;         // Incoming selected message date text
 msgOutDateFg: COLOR_GRAY;                       // Outgoing message date text
 msgOutDateFgSelected: COLOR_GREEN_LIGHT;        // Outgoing selected message date text
-msgServiceFg: COLOR_WHITE;                      // Service messages TEXT color (join, left etc)
+msgServiceFg: COLOR_WHITE;                      // Service messages text color (join, left etc)
 msgServiceBg: #363838;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
 msgServiceBgSelected: #8ca0b3a2;                // Service message selected text background (like in a service message about group title being changed) (adjusted)
 msgInReplyBarColor: COLOR_GREEN_DARK;           // Incoming msg: vertical bar next to reply
@@ -325,6 +339,8 @@ msgOutReplyBarSelColor: COLOR_GREEN_DARK;       // Outgoing msg: vertical bar ne
 msgImgReplyBarColor: msgServiceFg;              // Sticker message reply outline
 msgInMonoFg: COLOR_GREEN_LIGHT;                 // Monowidth font / incoming msg
 msgOutMonoFg: COLOR_GREEN_LIGHT;                // Monowidth font / outgoing msg
+msgInMonoFgSelected: msgInMonoFg;               // Incoming message monospace text in a selected text or message
+msgOutMonoFgSelected: msgOutMonoFg;             // Outgoing message monospace text in a selected text or message
 msgDateImgFg: msgServiceFg;                     // Media message time text (like time text in a sent photo)
 msgDateImgBg: #00000054;                        // Media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver: #00000074;                    // Media message download icon circle background with mouse over (like file with thumbnail download icon)
