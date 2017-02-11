@@ -80,7 +80,7 @@ menuBgRipple: windowBgRipple;                   // Default popup menu item rippl
 menuIconFg: COLOR_GRAY;                         // Icons color (left menu button, scroll down, paperclip..)
 menuIconFgOver: COLOR_GREEN_LIGHT;              // Icons color on hover (left menu button, scroll down, paperclip..)
 menuSubmenuArrowFg: #373737;                    // Default popup menu submenu arrow icon (like in message field context menu in case of RTL system language)
-menuFgDisabled: #cccccc;                        // Default popup menu item disabled text (like unavailable items in message field context menu)
+menuFgDisabled: #727272;                        // Default popup menu item disabled text (like unavailable items in message field context menu)
 menuSeparatorFg: COLOR_DARK;                    // Default popup menu separator (like in message field context menu)
 
 scrollBarBg: #15cd7d53;                         // Scrollbar (chats list) current position
