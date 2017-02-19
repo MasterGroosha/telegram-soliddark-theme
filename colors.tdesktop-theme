@@ -170,7 +170,7 @@ contactsStatusFgOnline: windowActiveTextFg;     // Contacts (and some other) box
 
 photoCropFadeBg: layerBg;                       // "Out-of-bounds" area in photo cropping (avatars etc...)
 photoCropPointFg: COLOR_WHITE;                  // Photo crop "corners" (which you drag to crop photo)
- 
+
 // intro
 introBg: COLOR_DARK;                            // Login screen background
 introTitleFg: windowBoldFg;                     // Login title text
