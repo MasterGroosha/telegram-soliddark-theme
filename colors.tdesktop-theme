@@ -460,6 +460,9 @@ notificationSampleCloseFg: #d7d7d7;             // Custom notifications settings
 notificationSampleTextFg: #d7d7d7;              // Custom notifications settings box small sample text placeholder
 notificationSampleNameFg: #939393;              // Custom notifications settings box small sample name placeholder
 
+changePhoneSimcardFrom: notificationSampleTextFg; // Change phone number box left simcard icon
+changePhoneSimcardTo: notificationSampleNameFg; // Change phone number box right simcard and plane icons
+
 mainMenuBg: COLOR_DARK;                         // Left menu background (lower part, not buttons)
 mainMenuCoverBg: dialogsBgActive;               // Left menu background (upper part)
 mainMenuCoverFg: COLOR_WHITE;                   // Main menu top cover text
