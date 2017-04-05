@@ -466,6 +466,8 @@ changePhoneSimcardTo: notificationSampleNameFg; // Change phone number box right
 mainMenuBg: COLOR_DARK;                         // Left menu background (lower part, not buttons)
 mainMenuCoverBg: dialogsBgActive;               // Left menu background (upper part)
 mainMenuCoverFg: COLOR_WHITE;                   // Main menu top cover text
+mainMenuCloudFg: activeButtonFg;                // "Cloud" icon in main menu
+mainMenuCloudBg: #2785bf | activeButtonBgRipple;// "Cloud" icon background in main menu
 
 mediaPlayerBg: COLOR_DARK;                      // Music player background
 mediaPlayerActiveFg: COLOR_GREEN_DARK;          // Clickable Next song/Prev song button in music player + played part color
