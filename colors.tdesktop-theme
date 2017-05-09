@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                              //
-//                          SolidDark theme v1.3 for Telegram Desktop.                          //
+//                          SolidDark theme v1.4 for Telegram Desktop.                          //
 //                                                                                              //
 //                                                                                              //
 //        Source code: https://github.com/MasterGroosha/telegram-soliddark-theme                //
@@ -171,6 +171,9 @@ contactsStatusFgOnline: windowActiveTextFg;     // Contacts (and some other) box
 photoCropFadeBg: layerBg;                       // "Out-of-bounds" area in photo cropping (avatars etc...)
 photoCropPointFg: COLOR_WHITE;                  // Photo crop "corners" (which you drag to crop photo)
 
+callArrowFg: boxTextFgGood;                     // Received phone call arrow (in calls list box)
+callArrowMissedFg: boxTextFgError;              // Missed phone call arrow (in calls list box)
+
 // intro
 introBg: COLOR_DARK;                            // Login screen background
 introTitleFg: windowBoldFg;                     // Login title text
@@ -233,6 +236,9 @@ dialogsUnreadBgActive: dialogsTextFgActive;     // Active chat unread badge back
 dialogsUnreadBgMutedActive: dialogsDraftFgActive; // Active chat unread badge background for muted chat (in chats list)
 dialogsUnreadFgActive: dialogsBgActive;         // Active chat unread badge text (in chats list)
 
+dialogsRippleBg: windowBgRipple;
+dialogsRippleBgActive: activeButtonBgRipple;
+
 dialogsForwardBg: dialogsBgActive;              // Forwarding panel background (when forwarding messages in the smallest window size)
 dialogsForwardFg: dialogsNameFgActive;          // Forwarding panel text (when forwarding messages in the smallest window size)
 
@@ -268,6 +274,12 @@ historyIconFgInverted: COLOR_WHITE;             // "Checks" on stickers (outgoin
 historySendingOutIconFg: #98d292;               // "Clock" icon while sending file (outgoing)
 historySendingInIconFg: #a0adb5;                // "Clock" icon while sending file (incoming)
 historySendingInvertedIconFg: COLOR_WHITE;      // Media sending message icon (clock) (like in sent photo)
+historyCallArrowInFg: callArrowFg;              // Received phone call arrow
+historyCallArrowInFgSelected: callArrowFg;      // Received phone call arrow in a selected message
+historyCallArrowMissedInFg: callArrowMissedFg;  // Missed phone call arrow
+historyCallArrowMissedInFgSelected: callArrowMissedFg; // Missed phone call arrow in a selected message
+historyCallArrowOutFg: historyCallArrowInFg;    // Outgoing phone call arrow
+historyCallArrowOutFgSelected: historyCallArrowInFgSelected; // Outgoing phone call arrow
 
 historyUnreadBarBg: #424444;                    // Unread messages bar background color
 historyUnreadBarBorder: COLOR_DARK;             // Unread messages bar border color
@@ -467,7 +479,7 @@ mainMenuBg: COLOR_DARK;                         // Left menu background (lower p
 mainMenuCoverBg: dialogsBgActive;               // Left menu background (upper part)
 mainMenuCoverFg: COLOR_WHITE;                   // Main menu top cover text
 mainMenuCloudFg: activeButtonFg;                // "Cloud" icon in main menu
-mainMenuCloudBg: #2785bf | activeButtonBgRipple;// "Cloud" icon background in main menu
+mainMenuCloudBg: activeButtonBgRipple;          // "Cloud" icon background in main menu
 
 mediaPlayerBg: COLOR_DARK;                      // Music player background
 mediaPlayerActiveFg: COLOR_GREEN_DARK;          // Clickable Next song/Prev song button in music player + played part color
@@ -511,3 +523,25 @@ mediaviewTransparentFg: #cccccc;                // Another transparent filling p
 
 // notification
 notificationBg: COLOR_DARK;                     // Notification background
+
+// calls
+callBg: #26282cf2;                              // Phone call popup background
+callNameFg: #ffffff;                            // Phone call popup name text
+callFingerprintBg: #00000066;                   // Phone call popup emoji fingerprint background
+callStatusFg: #aaabac;                          // Phone call popup status text
+callIconFg: #ffffff;                            // Phone call popup answer, hangup and mute mic icon
+callAnswerBg: #64c15b;                          // Phone call popup answer button background
+callAnswerRipple: #52b149;                      // Phone call popup answer button ripple effect
+callAnswerBgOuter: #50eb4126;                   // Phone call popup answer button outer ripple effect
+callHangupBg: #d75a5a;                          // Phone call popup hangup button background
+callHangupRipple: #c04646;                      // Phone call popup hangup button ripple effect
+callCancelBg: #ffffff;                          // Phone call popup line busy cancel button background
+callCancelFg: #777777;                          // Phone call popup line busy cancel button icon
+callCancelRipple: #f1f1f1;                      // Phone call popup line busy cancel button ripple effect
+callMuteRipple: #ffffff12;                      // Phone call popup mute mic ripple effect
+
+callBarBg: dialogsBgActive;                     // Active phone call bar background
+callBarMuteRipple: dialogsRippleBgActive;       // Active phone call bar mute and hangup button ripple effect
+callBarBgMuted: dialogsUnreadBgMuted;           // Phone call bar with muted mic background
+callBarUnmuteRipple: shadowFg;                  // Phone call bar with muted mic mute and hangup button ripple effect
+callBarFg: dialogsNameFgActive;                 // Phone call bar text and icons
