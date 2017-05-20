@@ -438,9 +438,9 @@ historyComposeAreaBg: msgInBg;                  // Text input field background
 historyComposeAreaFg: COLOR_WHITE;              // Text color in "Type your message" field
 historyComposeAreaFgService: msgInDateFg;       // Text color in "Type your message" field when replying to a media message
 historyComposeIconFg: menuIconFg;               // Text input field: Paperclip, Smile, Bot command icons
-historyComposeIconFgOver: menuIconFgOver;       // Text input field: Paperclip, Smile, Bot command icons (hover)
-historySendIconFg: windowBgActive;              // Text input field: Send icon
-historySendIconFgOver: windowBgActive;          // Text input field: Send icon (hover)
+historyComposeIconFgOver: COLOR_GREEN_LIGHT;    // Text input field: Paperclip, Smile, Bot command icons (hover)
+historySendIconFg: #0f8c56;                     // Text input field: Send icon
+historySendIconFgOver: #11a364;                 // Text input field: Send icon (hover)
 historyPinnedBg: historyComposeAreaBg;          // Pinned message area background
 historyReplyBg: historyComposeAreaBg;           // Reply / forward / edit message area background
 historyReplyIconFg: windowBgActive;             // Reply / forward / edit message left icon
