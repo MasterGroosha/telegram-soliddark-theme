@@ -399,6 +399,7 @@ historyFileThumbIconFgSelected: COLOR_WHITE;    // Selected file with thumbnail 
 historyFileThumbRadialFg: COLOR_WHITE;          // File with thumbnail (or photo / video) radial download animation line
 historyFileThumbRadialFgSelected: COLOR_WHITE;  // Selected file with thumbnail (or photo / video) radial download animation line
 
+historyVideoMessageProgressFg: historyFileThumbIconFg; // Radial playback progress in round video messages
 msgWaveformInActive: windowBgActive;            // Incoming Voice "heard" part
 msgWaveformInActiveSelected: COLOR_GREEN_LIGHT; // Selected incoming Voice "heard" part
 msgWaveformInInactive: #d4dee6;                 // Incoming Voice "unheard" part
