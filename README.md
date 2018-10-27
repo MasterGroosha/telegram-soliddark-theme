@@ -46,7 +46,7 @@ There's an [official guide](http://telegra.ph/Create-Telegram-Theme-01-12) how t
 **Installation**:  
 • Open [Releases](https://github.com/MasterGroosha/telegram-soliddark-theme/releases) section and find the most recent release tagged **[macOS]**.  
 • Download file with `palette` extension and send it to yourself in Telegram.  
-• Click on uploaded file and press "Apply Theme".
+• Click on the 'Settings' icon 10 times as shown in the picture below, and import the theme
 
 **Screenshot**:  
-![Theme for macOS](https://pp.userapi.com/c834302/v834302410/5fcc1/YWyfwN4l5uE.jpg)
+![Theme for macOS](docs/macos_instructions.png)
