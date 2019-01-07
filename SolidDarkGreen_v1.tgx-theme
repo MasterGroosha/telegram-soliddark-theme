@@ -1,0 +1,47 @@
+!
+name: "SolidDarkGreen_v1"
+time: 1546841850
+author: "SolidDarkTheme"
+@
+lightStatusBar, wallpaperOverrideButton: 0
+parentTheme: 10
+replaceShadowsWithSeparators: 1
+#
+attachContact, attachFile, attachInlineBot, attachLocation, attachPhoto, circleButtonChat, circleButtonOverlay, fileAttach: #00874C
+avatarSavedMessages, bubbleOut_file, file, fileGreen, headerButton: #01A05B
+background, bubble_buttonRipple, bubble_buttonRipple_noWallpaper, chatBackground, chatKeyboard, chatSeparator, filling, iv_preBlockBackground, iv_separator, notificationPlayer, overlayFilling, passcode, separator: #2F2F2F
+background_icon: #A6A8AA
+background_text, badgeMutedText, bubbleOut_progress, bubbleOut_time, chatListAction, circleButtonChatIcon, circleButtonOverlayIcon: #FFF
+background_textLight: #BBBCBD
+badge: #029B58
+badgeMuted: #818282
+bubble_button, bubble_button_noWallpaper: #545656
+bubble_chatSeparator, bubble_date_noWallpaper, chatKeyboardButton, unread: #363838
+bubble_mediaReply_noWallpaper: #3B3B3B
+bubble_unread: #0000008D
+bubble_unread_noWallpaper: #515151
+bubbleIn_background: #444
+bubbleIn_outline: #94515A
+bubbleIn_progress, bubbleIn_textLink, bubbleOut_chatVerticalLine, bubbleOut_inlineIcon, bubbleOut_inlineOutline, bubbleOut_inlineText, bubbleOut_messageAuthor, bubbleOut_textLink, bubbleOut_ticksRead, bubbleOut_waveformActive, chatSendButton, checkActive, controlActive, fillingPositive, headerBarCallActive, iconActive, inlineIcon, inlineOutline, inlineText, inputActive, messageAuthor, messageVerticalLine, notification, online, playerButtonActive, profileSectionActive, profileSectionActiveContent, progress, promo, seekDone, sliderActive, textLink, textNeutral, textSearchQueryHighlight, ticks, ticksRead, togglerActive, togglerPositive, waveformActive: #15CD7D
+bubbleIn_textLinkPressHighlight, bubbleOut_textLinkPressHighlight, textLinkPressHighlight: #13955DCE
+bubbleOut_background: #595A59
+bubbleOut_ticks: #15E289
+bubbleOut_waveformInactive: #AAAEB1
+chatListMute: #A1A1A1
+chatListVerify: #08D87D
+circleButtonRegular, circleButtonTheme, headerBackground, headerLightBackground: #008000
+controlInactive: #858585
+icon, iconLight: #9BA39F
+iv_caption, iv_pageAuthor, iv_pageFooter, iv_pageSubtitle: #A0A0A0
+iv_linkHighlight: #067B48AB
+playerCoverIcon: #FFFFFFCD
+playerCoverPlaceholder: #454545
+seekReady: #6F7377
+sliderInactive: #5E5E5E
+textLight: #969797
+textPlaceholder: #929292
+textSelectionHighlight: #0E8A5490
+togglerActiveBackground, togglerInactiveBackground: #8E8D8D
+togglerInactive: #606361
+togglerPositiveBackground: #8D9498
+waveformInactive: #9C9D9D
