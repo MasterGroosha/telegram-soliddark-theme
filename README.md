@@ -1,11 +1,12 @@
 # Solid Dark Theme for Telegram Desktop, Android and MacOS
 
-This repo contais some (or currently one :D) Solid Dark themes for Telegram Desktop, Android and MacOS. Don't forget to Subscribe to [@SolidDarkTheme](https://telegram.me/SolidDarkTheme) channel to get news and updates ;)  
+This repo contais some Solid Dark themes for Telegram Desktop, Android (with X) and MacOS. Don't forget to Subscribe to [@SolidDarkTheme](https://telegram.me/SolidDarkTheme) channel to get news and updates ;)  
 
 Choose platform below or scroll down to installation instructions and screenshots.  
 [Telegram Desktop](#tdesktop)  
 [Android](#android)  
 [MacOS](#macos)  
+[Telegram X (Android)](#telegram-x-for-android)  
 
 # TDesktop
 
@@ -50,3 +51,13 @@ There's an [official guide](http://telegra.ph/Create-Telegram-Theme-01-12) how t
 
 **Screenshot**:  
 ![Theme for macOS](https://pp.userapi.com/c834302/v834302410/5fcc1/YWyfwN4l5uE.jpg)
+
+# Telegram X for Android
+
+**Installation**:  
+• Open section and find the most recent release tagged **[android_x]**.  
+• Download file with `tgx-theme` extension and send it to yourself in Telegram.  
+• Click on uploaded file and press "Apply Theme".
+
+**Screenshot**:  
+![Theme for Telegram X Android](https://raw.githubusercontent.com/MasterGroosha/telegram-soliddark-theme/master/.github/screenshot_android_x.jpg)
