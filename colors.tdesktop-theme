@@ -205,6 +205,7 @@ dialogsSentIconFg: #5dc452;                     // Chat list sent message tick /
 dialogsUnreadBg: COLOR_GREEN_DARK;              // Chats list unread counter background
 dialogsUnreadBgMuted: #999999;                  // Chat list unread badge background for muted chat
 dialogsUnreadFg: COLOR_WHITE;                   // Unread counter text color
+dialogsOnlineBadgeFg: COLOR_GREEN_LIGHT;        // Chat list online status (for inactive item)
 
 dialogsBgOver: #363838;                         // Inactive chat color on hover
 dialogsNameFgOver: #ededed;                     // Chat list name text with mouse over
