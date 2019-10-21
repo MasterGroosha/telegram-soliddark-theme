@@ -333,7 +333,7 @@ msgStickerOverlay: #2223237f;                   // Selected sticker overlay
 msgInServiceFg: windowActiveTextFg;             // Incoming reply quoted name
 msgInServiceFgSelected: windowActiveTextFg;     // Selected incoming reply quoted name
 msgOutServiceFg: COLOR_GREEN_LIGHT;             // Outgoing reply quoted name
-msgOutServiceFgSelected: #367570;               // Selected outgoing reply quoted name
+msgOutServiceFgSelected: COLOR_GREEN_LIGHT;     // Selected outgoing reply quoted name
 msgInShadow: #3d3c3c29;                         // Incoming message box shadow
 msgInShadowSelected: #2f303029;                 // Selected incoming message box shadow
 msgOutShadow: #4e4f4e40;                        // Outgoing message box shadow
